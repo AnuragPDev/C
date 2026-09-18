@@ -27,11 +27,9 @@ printf("Enter an adjective(description): ");
 fgets(adjective3,sizeof(adjective3),stdin);
 adjective3[strlen(adjective3)-1]='\0';
 
-
-printf("%s\n", noun);
-printf("%s\n",verb);
-printf("%s\n",adjective1);
-printf("%s\n",adjective2);
-printf("%s\n",adjective3);
+  printf("Today I went to a %s garden.\n",adjective1);
+  printf("There in ground I saw %s.\n",noun);
+  printf("%s was %s in the tree and very %s .\n",noun, verb,adjective2);
+  printf("Everyone was %s.\n",adjective3);
 	return 0;
 }
