@@ -4,7 +4,8 @@ int main(){
 // we use fgets which read the strings from the buffer
 char name[55]="";
 printf("Enter Your name:\n");
-fgets(name,55, stdin);
+//fgets(name,55, stdin);
+// we can also use valueof()
 printf("Hello,%s\n",name);
 return 0;
 }
