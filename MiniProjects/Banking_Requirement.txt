@@ -1,0 +1,28 @@
+===== Banking App =====
+
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+
+Enter your choice:
+Start with an initial balance of ₹0.
+Check Balance
+Display the current account balance.
+Deposit Money
+Ask the user how much money they want to deposit.
+Add the amount to the current balance.
+Display the updated balance.
+Do not allow zero or negative deposits.
+Withdraw Money
+Ask the user how much money they want to withdraw.
+Check whether the account has enough money.
+If sufficient, subtract the amount and display the updated balance.
+If insufficient, display an appropriate message.
+Do not allow zero or negative withdrawals.
+Exit
+Display a goodbye message.
+Terminate the program.
+After completing an operation, show the menu again until the user chooses Exit.
+Handle an invalid menu choice with an appropriate message and show the menu again.
+Keep the program console-based. No GUI or database.
