@@ -5,8 +5,8 @@
 
 // funtion prototype
 void checkBalance(float balance,char currency);
-void depositMoney();
-void withdrawMoney();
+float depositMoney(float balance);
+float withdrawMoney(float balance);
 void mainScreen();
 
 
@@ -23,8 +23,8 @@ scanf("%d",&choice);
 
 switch(choice){
 	case 1: checkBalance(balance,currency);break;
-	case 2 :depositMoney();break;
-	case 3 :withdrawMoney();break;
+	case 2 :balance=depositMoney(balance);break;
+	case 3 :balance=withdrawMoney(balance);break;
         case 4 :printf("Thank You To Visiting Us\n");break;
         default:printf("Please enter a valid option\n");}
 }
@@ -47,18 +47,33 @@ printf("===========================================\n");
 
 void checkBalance(float bal,char currency){
 
-printf("Your current balance is %c%.2lf\n",currency,bal);
+printf("Your current balance is %c%.2f\n",currency,bal);
 }
 
 
-void depositMoney(){
+float depositMoney(float balance){
+	float amount;
+	printf("Enter the Amount to deposit: ");
+	scanf("%f",&amount);
+	balance= balance+amount;
 	
-printf("Money Deposited\n");
+printf("Money Deposited successfully\n");
+return balance;
 }
 
 
 
-void withdrawMoney(){
-printf("Money Withdraw");
+float  withdrawMoney(float currentBal){
+	float amount;
+	printf("Enter the Amount to withdraw: ");
+        scanf("%f",&amount);
+	if (amount>currentBal){
+	printf("Not Enough Money\n");
+}
+       else {
+       currentBal=currentBal-amount;
+       
+        printf("Money Withdraw successfully\n");}
+return currentBal;
 }
 
