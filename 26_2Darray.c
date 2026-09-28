@@ -22,6 +22,20 @@ printf("%d ",numbers[2][1]);
 printf("%d\n",numbers[2][2]);
 
 
+// accessing the element using nested loop
 
+for (int row= 0;row<3;row++){
+
+for(int col =0;col<3;col++){
+
+printf("%d ",numbers[row][col]);
+
+
+}
+printf("\n");
+
+
+
+}
 	return 0;
 }
