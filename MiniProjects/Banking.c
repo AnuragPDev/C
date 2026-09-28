@@ -68,7 +68,11 @@ float  withdrawMoney(float currentBal){
 	printf("Enter the Amount to withdraw: ");
         scanf("%f",&amount);
 	if (amount>currentBal){
-	printf("Not Enough Money\n");
+	printf("Insufficient funds! Your balance is %.2f\n",currentBal);
+}
+
+else if (amount<=0){
+	printf("Invalid amount!\n");
 }
        else {
        currentBal=currentBal-amount;
