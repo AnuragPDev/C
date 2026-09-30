@@ -30,43 +30,30 @@ char options[][100]={
 char answerKey[]= {'B', 'C', 'A', 'A', 'C'};
 
 int questionCount=sizeof(questions)/sizeof(questions[0]);
-do{
 
-printf("Welcome To Quiz\n");
-printf("Press 1 to start the quiz and 0 to exit the game\n");
-scanf("%d",&option);
+printf("==========QUIZ-GAME===========\n");
 
+for(int i=0 ; i<questionCount;i++){
+printf("\n%s\n", questions[i]);
+printf("\n%s\n",options[i]);
+printf("Enter your choice: ");
+scanf(" %c",&user_guess);
+if(user_guess ==answerKey[i]){
+score+=1;
+}
 
-if (option==1){
-
-
-
-printf("Game start"); 
 
 }
+
+printf("Your Score is %d/5\n",score);
+
+
 
 	
 
-else if (option==0){
-
-	printf("Thanks for playing\n");
-}
-else{
-printf("Enter the valid Option");
-}
-}
-while(option !=0);
 
 
-
-
-//printf("%s\n", questions[0]);
-//printf("%s\n",options[0]);
-//printf(%c\n",answerKey[0]);
 
 	return 0;
+	}
 
-
-
-
-}
