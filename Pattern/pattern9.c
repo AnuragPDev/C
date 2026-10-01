@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(){
+// right aligned triangle 
+//    *
+//   **
+//  ***
+// ****
+//*****
+// rows 
+for (int i =0 ; i <5;i++){
+// space
+for (int j =4 ; j>i;j--){
+
+printf(" ");
+}
+for (int k= 0 ; k<=i ; k++){
+
+printf("*");
+}
+
+printf("\n");
+}
+
+
+
+return 0;
+}
